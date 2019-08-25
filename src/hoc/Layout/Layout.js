@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import Aux from "../Aux/Aux";
+
+import { Link } from 'react-router-dom';
+
+import Aux from '../Aux/Aux';
 import classes from './Layout.module.css';
 
 class Layout extends Component {
@@ -8,11 +11,13 @@ class Layout extends Component {
             <Aux>
                 <header className={ classes.Header }>
                     <ul>
-                        <li>LISTS</li>
-                        <li>SEARCH</li>
+                        <li><Link to="/">LISTS</Link></li>
+                        <li><Link to="/search">SEARCH</Link></li>
                     </ul>
                 </header>
-                <main></main>
+                <main>
+                    { this.props.children }
+                </main>
             </Aux>
         );
     }
