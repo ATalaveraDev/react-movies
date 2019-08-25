@@ -11,8 +11,9 @@
     color: #FFF;
     cursor: pointer;
     margin: 0 10px;
+    text-decoration: none;
 }
 
-.Header ul li:hover {
+.Header ul li a:hover {
     color: coral;
 }
