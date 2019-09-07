@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const movie = (props) => (
-    <div>
-        <p>{ props.title }</p>
-    </div>
-);
+import Classes from './Movie.module.css';
 
-export default movie;
+class Movie extends Component {
+    classes = [
+        this.props.className,
+        Classes.Movie
+    ].join(' ');
+
+    render() {
+        return (
+            <div className={this.classes}>
+                <p>{ this.props.title }</p>
+            </div>
+        );
+    }
+}
+
+export default Movie;

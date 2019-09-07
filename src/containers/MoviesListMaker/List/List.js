@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Movie from '../../../components/Movie/Movie';
+import Classes from './List.module.css';
 
 class List extends Component {
     state = {
@@ -16,15 +17,43 @@ class List extends Component {
             {
                 id: '3',
                 title: 'Patlabor'
+            },
+            {
+                id: '4',
+                title: 'Patlabor'
+            },
+            {
+                id: '5',
+                title: 'Patlabor'
+            },
+            {
+                id: '6',
+                title: 'Patlabor'
+            },
+            {
+                id: '7',
+                title: 'Patlabor'
+            },
+            {
+                id: '8',
+                title: 'Patlabor'
+            },
+            {
+                id: '9',
+                title: 'Patlabor'
+            },
+            {
+                id: '10',
+                title: 'Patlabor'
             }
         ]
     };
 
     render() {
-        const list = this.state.movies.map(movie => <Movie key={ movie.id } title={ movie.title }/>);
+        const list = this.state.movies.map(movie => <Movie key={ movie.id } className={ Classes.Movie } title={ movie.title }/>);
 
         return (
-            <div>{ list }</div>
+            <div className={ Classes.List }>{ list }</div>
         );
     }
 }

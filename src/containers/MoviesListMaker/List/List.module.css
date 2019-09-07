@@ -1,0 +1,7 @@
+.List {
+    position: absolute;
+    bottom: 45px;
+    width: inherit;
+    padding: 0 15px;
+    box-sizing: border-box;
+}

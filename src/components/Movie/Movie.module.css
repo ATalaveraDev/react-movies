@@ -1,0 +1,9 @@
+.Movie {
+    height: 45px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.Movie p {
+    padding-top: 25px;
+    font-style: italic;
+}
