@@ -3,10 +3,7 @@ import React, { Component } from 'react';
 import Classes from './Movie.module.css';
 
 class Movie extends Component {
-    classes = [
-        this.props.className,
-        Classes.Movie
-    ].join(' ');
+    classes = [this.props.className, Classes.Movie].join(' ');
 
     render() {
         return (

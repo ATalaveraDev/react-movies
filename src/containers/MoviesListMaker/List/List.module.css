@@ -1,7 +1,5 @@
 .List {
-    position: absolute;
-    bottom: 45px;
-    width: inherit;
+    width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
 }
