@@ -22,7 +22,7 @@ const complex = (props) => {
   );
 
   return (
-    <div>
+    <div className={ Classes.AlignRight }>
       { paginator }
     </div>
   );

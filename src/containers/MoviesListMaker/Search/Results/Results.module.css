@@ -1,3 +1,41 @@
 .Results {
-    height: 450px;
+    min-height: 600px;
+}
+
+.ResultRow {
+    border-bottom: 1px solid #ccc;
+}
+
+.ResultRow .Title {
+    width: 100%;
+    font-size: 20px;
+}
+
+.ResultRow span {
+    width: 90%;
+    padding-top: 9px;
+    display: inline-block;
+}
+
+.ImgContainer {
+    height: 200px;
+    width: 18%;
+    display: inline-block;
+}
+
+.Info {
+    display: inline-block;
+    width: 82%;
+    height: 150px;
+}
+
+.Info p {
+    font-size: 14px;
+    padding: 10px;
+    height: 115px;
+    text-align: justify;
+}
+
+.Info .Actions {
+    height: 35px;
 }

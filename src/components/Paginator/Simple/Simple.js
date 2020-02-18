@@ -12,7 +12,7 @@ const simple = (props) => {
   }
 
   return (
-    <div>
+    <div className={ Classes.AlignRight }>
       { paginator }
     </div>
   );

@@ -4,9 +4,9 @@ import axios from "../../../axios-tmdb";
 
 import Searcher from "../../../components/Searcher/Searcher";
 import Results from "../Search/Results/Results";
-import Aux from "../../../hoc/Aux/Aux";
 import Paginator from "../../../components/Paginator/Paginator";
-import {TMDB_API_KEY_V3} from "../../../token";
+import { TMDB_API_KEY_V3 } from "../../../token";
+import Classes from './Search.module.css';
 
 class Search extends Component {
   state = {
@@ -21,7 +21,6 @@ class Search extends Component {
     axios.get(`/search/movie?api_key=${TMDB_API_KEY_V3}&query=${event.target.value}`)
       .then((response) => {
         this.setState({ results: response.data.results, totalPages: response.data.total_pages, page: response.data.page });
-        console.log('r', response);
       })
       .catch(() => { });
   };
@@ -36,11 +35,11 @@ class Search extends Component {
 
   render() {
       return (
-        <Aux>
+        <div className={ Classes.Search }>
           <Searcher keyUpHandler={ this.performSearch }></Searcher>
           <Results movies={ this.state.results }></Results>
           <Paginator totalPages={ this.state.totalPages } goToPageHandler={ this.goToPage } activePage={ this.state.page }></Paginator>
-        </Aux>
+        </div>
       );
   }
 }

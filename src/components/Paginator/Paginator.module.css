@@ -1,7 +1,5 @@
 .Paginator {
-    height: 50px;
-    float: right;
-    margin: 15px 60px 0 0;
+    height: 75px;
 }
 
 .Page {
@@ -13,4 +11,9 @@
 
 .Active {
     color: red;
+}
+
+.AlignRight {
+    float: right;
+    padding-top: 22px;
 }
