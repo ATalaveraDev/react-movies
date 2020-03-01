@@ -27,12 +27,13 @@
     display: inline-block;
     width: 82%;
     height: 150px;
+    vertical-align: top;
 }
 
 .Info p {
     font-size: 14px;
     padding: 10px;
-    height: 115px;
+    max-height: 115px;
     text-align: justify;
 }
 
