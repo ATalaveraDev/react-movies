@@ -1,0 +1,11 @@
+.TextFilter {
+    border-radius: 7px;
+    height: 25px;
+    border: 1px solid #cccccc;
+    outline: none;
+    padding-left: 10px;
+}
+
+.Eye {
+    fill: #cccccc;
+}

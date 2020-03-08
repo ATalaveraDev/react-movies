@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-import Movie from '../../../components/Movie/Movie';
-import Classes from './List.module.css';
+import List from '../../../components/List/List';
+import Filters from '../../../containers/MoviesListMaker/ListPage/Filters/Filters';
+import Classes from './ListPage.module.css';
 
-class List extends Component {
+class ListPage extends Component {
     state = {
         movies: [
             {
@@ -50,12 +51,13 @@ class List extends Component {
     };
 
     render() {
-        const list = this.state.movies.map(movie => <Movie key={ movie.id } className={ Classes.Movie } title={ movie.title }/>);
-
         return (
-            <div className={ Classes.List }>{ list }</div>
+            <div className={ Classes.ListPage }>
+                <Filters></Filters>
+                <List movies={ this.state.movies } />
+            </div>
         );
     }
 }
 
-export default List;
+export default ListPage;

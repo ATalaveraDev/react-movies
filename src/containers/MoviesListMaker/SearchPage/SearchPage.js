@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Search extends Component {
+class SearchPage extends Component {
     render() {
         return (
             <div>Search</div>
@@ -8,4 +8,4 @@ class Search extends Component {
     }
 }
 
-export default Search;
+export default SearchPage;
