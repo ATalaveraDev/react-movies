@@ -1,0 +1,11 @@
+.SearcherContainer {
+    text-align: center;
+    margin-top: 25px;
+    height: 85px;
+}
+
+.Searcher {
+    width: 90%;
+    margin: auto;
+    height: 25px;
+}

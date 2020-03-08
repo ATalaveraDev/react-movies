@@ -1,0 +1,19 @@
+.Paginator {
+    height: 75px;
+}
+
+.Page {
+    width: 18px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Active {
+    color: red;
+}
+
+.AlignRight {
+    float: right;
+    padding-top: 22px;
+}
