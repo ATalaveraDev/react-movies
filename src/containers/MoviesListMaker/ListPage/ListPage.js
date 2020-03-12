@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import List from '../../../components/List/List';
 import Filters from '../../../containers/MoviesListMaker/ListPage/Filters/Filters';
-import Classes from './ListPage.module.css';
 
 class ListPage extends Component {
     state = {
@@ -52,7 +51,7 @@ class ListPage extends Component {
 
     render() {
         return (
-            <div className={ Classes.ListPage }>
+            <div>
                 <Filters></Filters>
                 <List movies={ this.state.movies } />
             </div>

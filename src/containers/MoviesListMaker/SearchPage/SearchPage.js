@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import axios from "../../../axios-tmdb";
 
 import Searcher from "../../../components/Searcher/Searcher";
-import Results from "../Search/Results/Results";
+import Results from "./Results/Results";
 import Paginator from "../../../components/Paginator/Paginator";
 import { TMDB_API_KEY_V3 } from "../../../token";
 import Classes from './Search.module.css';

@@ -1,9 +1,15 @@
 .Movie {
     height: 45px;
-    border-bottom: 1px solid #dcdcdc;
+    border: 1px solid #dcdcdc;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 3px #cccccc;
+}
+
+.Movie:hover {
+    transform: translate(-5px, -5px);
 }
 
 .Movie p {
-    padding-top: 25px;
-    font-style: italic;
+    margin: 10px 0 10px 0;
 }
